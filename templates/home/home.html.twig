@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Accueil</title>
+{% extends 'base.html.twig' %}
 
-    {% block title %}Accueil{% endblock %}
+{% block title %}Accueil{% endblock %}
 
-    {% block body %}
+{% block body %}
 
-    {% endblock %}
-</head>
 <body>
 <h1>Page d accueil</h1>
 
+<a href="{{ path('app_login') }}" class="btn">se connecter</a>
 
+<a href="{{ path('ajout_utilisateur') }}" class="btn">ajout d 'un utilisateur</a>
 
 
 </body>
-</html>
+{% endblock %}
+
